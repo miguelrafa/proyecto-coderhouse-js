@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks Market</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!--Fonts-->
+
+		<!--Mulish Extra-bold 800-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+
+	<!--Link al archivo CSS-->
+        <link rel="stylesheet" href="../CSS/common.css">
+		<link rel="stylesheet" href="../CSS/productos.css">
+
+<!--Favicon-->
+
+        <link rel="shortcut icon" href="../Images/logo2.ico" type="image/x-icon">
+        <link rel="icon" href="../Images/logo2.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<header>
+
+        <!-- Navigation--> 
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navBarCustom">
+            <a class="navbar-brand" href="./inicio.html">
+                <img src="../Images/logo2.png" alt="" width="36" height="46" class="d-inline-block align-text-center">
+                Drinks Market
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="./productos.html">Productos</a>
+                </li>		
+                <li class="nav-item">
+                  <a id="shopCartText" class="nav-link active" href="#">Carrito</a>
+                </li>
+                <a class="navbar-brand" href="#">
+                    <img id="shopCart" src="../Images/cart.png" alt="" width="40" height="46" class="d-inline-block align-text-center">		
+                </a>
+              </ul>
+            </div>
+        </nav>
+        
+        <div class="container-fluid tituloHeader">
+        
+          <div class="column">
+          
+          <h1>Productos</h1>
+        
+          </div>
+        
+        </div>
+         
+
+</header>
+
+
+
+<!-- Productos -->
+
+  <div class="container-fluid tituloPrincipal">
+      <div class="row">
+          <div class="col">
+      
+          <h2 class="finalText">Elegi tu Bebida. Si tu compra total es de $1000 o mas, te hacemos 10% de descuento.</h2>
+
+          </div>
+      </div>
+
+  </div>
+
+
+
+<!--Seleccion Productos-->
+
+
+  <div class="container-fluid tituloProductos hideFinal">
+        <div class="row">
+          <div class="col">
+
+            <div class="btn-group  btn-group-lg buttonsProducts" role="group" aria-label="Seleccion Productos">
+              <button type="button" class="btn btn-light active"><a href="#anchor-energizantes">ENERGIZANTES</a></button>
+              <button type="button" class="btn btn-light active"><a href="#anchor-vinos">VINOS</a></button>
+              <button type="button" class="btn btn-light active"><a href="#anchor-cervezas">CERVEZAS</a></button>
+              <button type="button" class="btn btn-light active"><a href="#anchor-espumantes">ESPUMANTES</a></button>
+              <button type="button" class="btn btn-light active"><a href="#anchor-gaseosas">GASEOSAS</a></button>
+            </div>
+
+          </div>
+        </div>
+  </div>
+
+
+<!-- Boton Compra -->
+
+
+  
+
+
+    <div id="irCarrito" class="container-button buttonComprar">
+    <button type="button" class="btn btn-dark font-weight-bold btn-sm btn-raised">Ir al carrito</button>   
+    </div>
+
+ 
+
+
+<!--Inicio Productos-->
+
+
+<!--Vinos-->
+
+<div class="container-fluid tituloProductos hideFinal">
+  <div class="row">
+      <div class="col">
+  
+      <h3 id="anchor-vinos">VINOS</h3>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="flexSectionProductosList hideFinal">
+
+		
+
+			
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Vinos/CasilleroDelDiabloBlanco.jpeg" alt="Vinos">
+    <div class="card-body">
+      <form id="prod5">
+      <h5 class="card-title">Casillero del Diablo - Chardonnay</h5>
+      <p class="price">$200</p>
+      <p>Casillero del Diablo - Chardonnay 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant5" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Vinos/ConchayToro.jpeg" alt="Vinos">
+    <div class="card-body">
+      <form id="prod6">
+      <h5 class="card-title">Concha y Toro - Tinto Merlot</h5>
+      <p class="price">$200</p>
+      <p>Concha Y Toro – Tinto Merlot 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant6" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Vinos/SantaElenaChardonnay.jpeg" alt="Vinos">
+    <div class="card-body">
+      <form id="prod7">
+      <h5 class="card-title">Santa Elena - Chardonnay</h5>
+      <p class="price">$200</p>
+      <p>Santa Helena Chardonnay 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant7" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Vinos/SantaHelenaMerlot.jpeg" alt="Vinos">
+    <div class="card-body">
+      <form id="prod8">
+      <h5 class="card-title">Santa Elena - Tinto Merlot</h5>
+      <p class="price">$200</p>
+      <p>Santa Helena - Tinto Merlot 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant8" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+</div>	
+
+
+
+<!--Cervezas-->
+
+<div class="container-fluid tituloProductos hideFinal">
+  <div class="row">
+      <div class="col">
+  
+      <h3 id="anchor-cervezas">CERVEZAS</h3>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="flexSectionProductosList hideFinal">
+
+		
+
+			
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Cervezas/Heineken.jpeg" alt="Cervezas">
+    <div class="card-body">
+      <form id="prod9">
+      <h5 class="card-title">Heineken</h5>
+      <p class="price">$300</p>
+      <p>Heineken 330ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant9" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Cervezas/Corona.png" alt="Cervezas">
+    <div class="card-body">
+      <form id="prod10">
+      <h5 class="card-title">Corona</h5>
+      <p class="price">$300</p>
+      <p>Corona 355ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant10" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Cervezas/StellaArtois.jpeg" alt="Cervezas">
+    <div class="card-body">
+      <form id="prod11">
+      <h5 class="card-title">Stella Artois</h5>
+      <p class="price">$300</p>
+      <p>Stella Artois 275ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant11" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Cervezas/Sol.jpeg" alt="Cervezas">
+    <div class="card-body">
+      <form id="prod12">
+      <h5 class="card-title">Sol</h5>
+      <p class="price">$300</p>
+      <p>Sol 330ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant12" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+</div>	
+
+
+
+<!--Espumantes-->
+
+<div class="container-fluid tituloProductos hideFinal">
+  <div class="row">
+      <div class="col">
+  
+      <h3 id="anchor-espumantes">ESPUMANTES</h3>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="flexSectionProductosList hideFinal">
+
+		
+
+			
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Espumantes/ChandonBrut.png" alt="Espumantes">
+    <div class="card-body">
+      <form id="prod13">
+      <h5 class="card-title">Chandon Brute</h5>
+      <p class="price">$400</p>
+      <p>Espumante Chandon - Brut 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant13" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Espumantes/ChandonRose.png" alt="Espumantes">
+    <div class="card-body">
+      <form id="prod14">
+      <h5 class="card-title">Chandon Rose</h5>
+      <p class="price">$400</p>
+      <p>Espumante Chandon - Rosé 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant14" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Espumantes/Mum.jpeg" alt="Espumantes">
+    <div class="card-body">
+      <form id="prod15">
+      <h5 class="card-title">Mumm</h5>
+      <p class="price">$400</p>
+      <p>Espumante MUMM - Extra Brut 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant15" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Espumantes/VeuveClicquot.png" alt="Espumantes">
+    <div class="card-body">
+      <form id="prod16">
+      <h5 class="card-title">Veuve Clicquot</h5>
+      <p class="price">$400</p>
+      <p>Veuve Clicquot - Sabor Exclusivo 750ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant16" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+</div>	
+
+
+<!--Energizantes-->
+
+<div class="container-fluid tituloProductos hideFinal">
+  <div class="row">
+      <div class="col">
+  
+      <h3 id="anchor-energizantes">ENERGIZANTES</h3>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="flexSectionProductosList hideFinal">
+
+		
+
+			
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Energizantes/RedBull.jpg" alt="Energizantes">
+    <div class="card-body">
+      <form id="prod1" class="prod">
+        <h5 class="card-title">Red Bull</h5>
+        <p class="price">$100</p>
+        <p>Red Bull Energy Drink 250ml</p>   
+        <div class="mb-3 text-center">
+          <input id="cant1" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+        </div>
+        <div class="container-button">
+          <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">   
+        </div>
+      </form>  
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Energizantes/Monster.jpeg" alt="Energizantes">
+    <div class="card-body">
+      <form id="prod2">
+        <h5 class="card-title">Monster</h5>
+        <p class="price">$100</p>
+        <p>Monster Energy Drink 473ml</p>
+        <div class="mb-3 text-center">
+          <input id="cant2" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+        </div>
+        <div class="container-button">
+          <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Energizantes/fusion.jpg" alt="Energizantes">
+    <div class="card-body">
+      <form id="prod3">
+        <h5 class="card-title">Fusion</h5>
+        <p class="price">$100</p>
+        <p>Fusion Energy Drink 250ml</p>
+        <div class="mb-3 text-center">
+          <input id="cant3" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+        </div>
+        <div class="container-button">
+          <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Energizantes/RedBullTropical.jpg" alt="Energizantes">
+    <div class="card-body">
+      <form id="prod4">
+        <h5 class="card-title">Red Bull Tropical</h5>
+        <p class="price">$100</p>
+        <p>Red Bull Tropical Edition 250ml</p>
+        <div class="mb-3 text-center">
+          <input id="cant4" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+        </div>
+        <div class="container-button">
+          <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+</div>	
+
+
+
+
+
+<!--Gaseosas-->
+
+<div class="container-fluid tituloProductos hideFinal">
+  <div class="row">
+      <div class="col">
+  
+      <h3  id="anchor-gaseosas">GASEOSAS</h3>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="flexSectionProductosList hideFinal">
+
+		
+
+			
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Gaseosas/CocaCola.jpeg" alt="Gaseosas">
+    <div class="card-body">
+      <form id="prod17">
+      <h5 class="card-title">Coca Cola</h5>
+      <p class="price">$50</p>
+      <p>Coca Cola 350ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant17" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Gaseosas/Pepsi.jpeg" alt="Gaseosas">
+    <div class="card-body">
+      <form id="prod18">
+      <h5 class="card-title">Pepsi</h5>
+      <p class="price">$50</p>
+      <p>Pepsi 350ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant18" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Gaseosas/Schweppes.jpeg" alt="Gaseosas">
+    <div class="card-body">
+      <form id="prod19">
+      <h5 class="card-title">Schweppes</h5>
+      <p class="price">$50</p>
+      <p>Schweppes 350ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant19" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="card card1 text-center" style="width: 18rem;">
+    <img class="card-img-top mx-auto cardImageProducts" src="../Images/Products/Gaseosas/Sprite.jpeg" alt="Gaseosas">
+    <div class="card-body">
+      <form id="prod20">
+      <h5 class="card-title">Sprite</h5>
+      <p class="price">$50</p>
+      <p>Sprite 350ml</p>
+      <div class="mb-3 text-center">
+        <input id="cant20" type="number" min="0" class="form-control-sm w-25 text-center border border-dark" placeholder="0">
+      </div>
+      <div class="container-button">
+        <input type="submit" class="btn btn-warning font-weight-bold" value="Agregar al carrito">
+      </div>
+      </form>
+    </div>
+  </div> 
+
+
+
+
+</div>	
+
+
+
+<!--Resumen Compra-->
+
+	
+		<div id="anchor-resumenCompra" class="tituloResumen">
+
+			
+        <h2 id="resumenCompra"></h2>     
+
+      <div class="tituloBuyListFinal">
+
+        <ul id="buyListFinal">
+          <li></li>
+        </ul>      		
+				
+
+			</div>
+
+
+			<div class="tituloBuyList">
+      
+				
+				<div id="buyList">
+        </div>
+
+
+			</div>
+   
+
+		
+    </div> 
+
+
+
+
+<!--Resumen Fixed-->
+
+    <div id="resumenFixed" class="resumenCompraFixed"></div>
+    
+
+
+
+
+<!--Bootstrap Framework-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+<!-- JavaScript JQuery -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- JavaScript -->
+<script src="../JS/productos.js"></script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,33 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+.navBarCustom {
+    background-color: rgb(160, 159, 159);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}
+ .tituloHeader {
+    background-color: rgb(255, 217, 0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 78px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+ }
+
+.tituloPrincipal {
+    background-color: rgb(168, 195, 223);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 2px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+}

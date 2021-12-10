@@ -1,0 +1,101 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+
+.flexSectionProductosList {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px;   
+}
+
+
+.card1 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    border-style: none;
+  }
+
+.cardImage {
+      width: 200px;
+      height: 300px;
+}
+
+.cardImageProducts {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.tituloProductos {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+}
+
+.buttonsProducts {
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+}
+
+.btnmargin {
+  margin-top: 3px;
+}
+
+.buttonComprar {
+  position: fixed;
+  top: 800;
+  right: 400;
+  z-index: 5;
+  transition: box-shadow .4s cubic-bezier(.25, .8, .25, 1), transform .4s cubic-bezier(.25, .8, .25, 1);
+  box-shadow: 7px 4px 7px 4px rgba(0, 0, 0, .26)
+ 
+
+}
+
+
+.tituloResumen {
+  background-color: rgb(255, 217, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+}
+
+
+.tituloBuyList {
+  background-color: rgb(0, 255, 234);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+}
+
+.tituloBuyListFinal {
+  background-color: rgb(243, 224, 182);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+}
