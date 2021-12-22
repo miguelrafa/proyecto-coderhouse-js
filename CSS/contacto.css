@@ -1,0 +1,21 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+ .contactForm {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aliceblue;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+.contactImage {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgb(250, 250, 250);
+}
+

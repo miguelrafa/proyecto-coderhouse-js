@@ -31,3 +31,9 @@
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
 }
+
+.footerFonts {
+    margin-top: 5px;
+    background-color: rgb(160, 159, 159);
+    font-family: 'Mulish', sans-serif;
+}

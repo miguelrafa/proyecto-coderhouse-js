@@ -46,7 +46,6 @@ function discountFunc(tot) {
 
 };
 
-
 //Function Resumen Fixed
 
 $.fn.ResumenFixed = function(){
@@ -61,7 +60,6 @@ $.fn.ResumenFixed = function(){
                 "top": "14%",
                 "right": "2.5%", 
                 "z-index": "100000",
-                /*display: none;*/
                 "font-family": "Mulish, sans-serif",
                 "justify-content": "center", 
                 "align-items": "center",
@@ -69,8 +67,7 @@ $.fn.ResumenFixed = function(){
                 "box-shadow": "2px 2px 8px  1px rgba(0,0,0,0.35)"
             });
 
-        $("#buyListFinal").append(`<li>${textnode}</li>`);
-        
+        $("#buyListFinal").append(`<li>${textnode}</li>`);        
 
 }
 
@@ -94,11 +91,11 @@ $.fn.ResponseTotalDiscount = function(){
             "box-shadow": "2px 2px 8px  1px rgba(0,0,0,0.35)"
         });
 
-        $ ("#buyList").append(`<div>${responseTotalDiscount}</div>`);
+        $ ("#buyList").append(`<div id="response">${responseTotalDiscount}</div>`);
 
         $ ("#buyList").append(`<div class="btn-group btn-final" role="group" aria-label="Response Total Discount">
-        <button type="button" class="btn btn-final-group btn-dark font-weight-bold btn-sm btn-raised">Comprar</button>
-        <button id="reload" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-sm btn-raised">Cancelar</button>
+        <button id="finalConfirmation" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-lg btn-raised">Comprar</button>
+        <button id="reload" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-lg btn-raised">Cancelar</button>
         </div>`);
 
         $(".btn-final").css({
@@ -115,6 +112,42 @@ $.fn.ResponseTotalDiscount = function(){
             sessionStorage.clear();
             
         });
+
+    //Confirmacion Final
+
+    $('#finalConfirmation').click(function() {
+
+        $('#buyList').hide().fadeIn('5000');
+        $("#buyList").fadeIn('5000');
+
+        $( "#response" ).replaceWith( "<div>Muchas gracias!</div>" );
+
+        $( ".finalText" ).replaceWith( "<h2>Drinks Market</h2>" );
+
+        $(".btn-group").hide();
+
+        $ ("#buyList").append(`<div id="confirmacionProcesado" class="confirmacionProcesado"><h4>Tu compra ha sido procesada con exito</h4></div>
+        <div class="btn-group btn-final" role="group" aria-label="Response Total">            
+        <button id="exit" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-lg btn-raised">Salir</button>
+        </div>`);
+
+        $(".confirmacionProcesado").css({
+            "margin-top": "20px",
+            "margin-bottom": "20px",
+            "padding-top": "10px",
+            "padding-bottom": "10px",
+            "background-color": "rgb(255, 217, 0)",
+        });
+
+
+        $('#exit').click(function() {
+
+            location.reload();
+            sessionStorage.clear();
+
+        });
+
+    });
 
 };
 
@@ -138,12 +171,11 @@ $.fn.ResponseTotal = function(){
             "box-shadow": "2px 2px 8px  1px rgba(0,0,0,0.35)"
         });
 
-
-        $ ("#buyList").append(`<div>${responseTotal}</div>`);
+        $ ("#buyList").append(`<div id="response">${responseTotal}</div>`);
 
         $ ("#buyList").append(`<div class="btn-group btn-final" role="group" aria-label="Response Total">
-        <button type="button" class="btn btn-final-group btn-dark font-weight-bold btn-sm btn-raised">Comprar</button>
-        <button id="reload" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-sm btn-raised">Cancelar</button>
+        <button id="finalConfirmation" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-lg btn-raised">Comprar</button>
+        <button id="reload" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-lg btn-raised">Cancelar</button>
         </div>`);
 
         $(".btn-final").css({
@@ -158,6 +190,43 @@ $.fn.ResponseTotal = function(){
         $('#reload').click(function() {
             location.reload();
             sessionStorage.clear();
+       
+        });
+
+        //Confirmacion Final
+
+        $('#finalConfirmation').click(function() {
+
+            $('#buyList').hide().fadeIn('5000');
+            $("#buyList").fadeIn('5000');
+
+            $( "#response" ).replaceWith( "<div>Muchas gracias!</div>" );
+
+            $(".btn-group").hide();
+
+
+
+            $ ("#buyList").append(`<div id="confirmacionProcesado" class="confirmacionProcesado"><h4>Tu compra ha sido procesada con exito</h4></div>
+            <div class="btn-group btn-final" role="group" aria-label="Response Total">            
+            <button id="exit" type="button" class="btn btn-final-group btn-dark font-weight-bold btn-lg btn-raised">Salir</button>
+            </div>`);
+
+
+            $(".confirmacionProcesado").css({
+                "margin-top": "20px",
+                "margin-bottom": "20px",
+                "padding-top": "10px",
+                "padding-bottom": "10px",
+                "background-color": "rgb(255, 217, 0)",
+            });
+
+
+            $('#exit').click(function() {
+
+                location.reload();
+                sessionStorage.clear();
+
+            });
        
         });
 
@@ -962,11 +1031,11 @@ $(document).ready(function(){
     $("#irCarrito, #shopCart, #shopCartText").click(function(){
 
     $("#irCarrito").hide();
-    $(".hideFinal").hide();
-    $( ".finalText" ).replaceWith( "<h2>Revisa tu compra. Muchas gracias!</h2>" );
-    
-    
 
+    $(".hideFinal").hide();
+
+    $( ".finalText" ).replaceWith( "<h2>Drinks Market</h2>" );   
+    
             let totalProd1 = JSON.parse(sessionStorage.getItem("TotalProducto1"));
 
             let totalProd2 = JSON.parse(sessionStorage.getItem("TotalProducto2"));
